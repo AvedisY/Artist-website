@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="Gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+        <a href="index.html" id="navbar__logo">Joanna Hagopian</a>
+        <div class="navbar__toggler" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item dropdown">
+            <a href="gallery.html" class="navbar__links dropbtn" id="gallery-page">Gallery</a>
+            <div class="dropdown-content">
+              <a href="people_of_the_room.html">People of the room</a>
+              <a href="#">Suspended in time</a>
+              <a href="metamorphosis.html">Metamorphosis</a>
+              <a href="serenade.html">Serenade</a>
+              <a href="storyteller.html">Storyteller</a>
+            </div>
+          </li>
+          <li class="navbar__item">
+            <a href="about.html" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="contact.html" class="navbar__links" id="contact-page">Contact</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+      <!--main section-->
+      <section class="all__gallery">
+
+        <h1 class="gallery__title">People Of The Room</h1>
+        <div class= "essence">
+          <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis venenatis odio eu finibus. Suspendisse potenti. Nulla pharetra rhoncus velit at auctor. Maecenas euismod nulla sed quam semper, vel finibus ex eleifend. Nam dignissim mattis velit, sit amet congue augue dapibus faucibus. Vivamus dolor lacus, commodo eu venenatis vitae, volutpat quis ipsum. Donec lacinia nulla mauris, eu tempor lacus sodales id. Nulla ac urna elementum, feugiat odio eu, hendrerit eros. Sed volutpat magna nec magna posuere, in venenatis quam eleifend. Aliquam erat volutpat. Cras porta ex eros, non venenatis ipsum fermentum ac. Sed urna dui, vulputate vitae massa eu, consectetur bibendum nunc. </h2>
+        </div>
+        <ul class="gallery__grid" id="container">
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" onclick="onClick(this)" src="People of the Room - Sculptures\IMG_6943.jpg" alt="Virtual Reflection">
+              <h2>Animals</h2>
+          </div>
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" src="People of the Room - Sculptures\IMG_6949.jpg" onclick="onClick(this)" alt="Escape">
+              <h2>Humans</h2>
+            </div>
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" onclick="onClick(this)" src="People of the Room - Sculptures\IMG_6958.jpg" alt="">
+              <h2>Meta</h2>
+            </div>
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" src="People of the Room - Sculptures\IMG_6967.jpg" onclick="onClick(this)" alt="">
+              <h2>Virtual Reflection</h2>
+            </div>  
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" src="People of the Room - Sculptures\IMG_6973.jpg" onclick="onClick(this)" alt="">
+              <h2>Meta</h2>
+            </div>    
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" src="People of the Room - Sculptures\IMG_6974.jpg" onclick="onClick(this)" alt="">  
+              <h2>Meta</h2>
+            </div>
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" src="People of the Room - Sculptures\IMG_6980.jpg" onclick="onClick(this)" alt="">
+              <h2>Meta</h2>
+            </div>  
+          </li>
+          <li>
+            <div class="myImg">
+              <img class="modal-hover-opacity" src="People of the Room - Sculptures\IMG_6984.jpg" onclick="onClick(this)" alt="">  
+              <h2>Meta</h2>
+            </div>
+          </li>    
+        </ul>
+        
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" src=" " style="max-width:100%">
+            <div class="modal-text">
+              <h2 id="name01" class="modal-name"></h2>
+              <h4 class="modal-type">oil on canvas</h4>
+              <h4 id="size01" class="modal-size"></h4>
+            </div>
+          </div>
+        </div>   
+
+      </section>
+</body>
+<script src="apps.js"></script>
+
+</html>

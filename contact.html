@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--navbar section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+      <a href="index.html" id="navbar__logo">Joanna Hagopian</a>
+      <div class="navbar__toggler" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="index.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item dropdown">
+          <a href="gallery.html" class="navbar__links dropbtn" id="gallery-page">Gallery</a>
+          <div class="dropdown-content">
+            <a href="people_of_the_room.html">People of the room</a>
+            <a href="#">Suspended in time</a>
+            <a href="metamorphosis.html">Metamorphosis</a>
+            <a href="serenade.html">Serenade</a>
+            <a href="storyteller.html">Storyteller</a>
+          </div>
+        </li>
+        <li class="navbar__item">
+          <a href="about.html" class="navbar__links" id="about-page">About</a>
+        </li>
+        <li class="navbar__item">
+          <a href="contact.html" class="navbar__links" id="contact-page">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="New__contact">
+      <div class="Contact__box">
+        <div class="Contact__image">
+          <ul>
+            <li>
+              <h3>Address</h3>
+              <p>Beirut, Burj-Hammoud, Alishan Center, 4th floor, last door on the right...</p>  
+            </li>
+            <li>
+              <h3>Cell</h3>
+              <p><a href="tel:+961 3092237">+961 3092237</a></p>
+            </li>
+            <li>
+              <h3>Email</h3>
+              <p>Janethagobian@hotmail.com</p>
+            </li>
+          </ul>
+        </div>
+        <div class="Contact__direct">
+          <h2>Message me!</h2>
+          <form id="fs-frm" name="complaint-form" accept-charset="utf-8" action="https://formspree.io/f/xvoykenq"
+          method="POST">
+            <div class="form-group">
+              <label for="name-input">Your name*</label>
+              <input id="name-input" type="text" placeholder="First name" required="" name="name">
+              <input type="text" placeholder="Last name" required="" name="name">
+            </div>
+            <div class="form-group">
+              <label for="email-input">Enter your email</label>
+              <input id="email-input" type="text" placeholder="Eg. example@gmail.com" required="" name="_replyto">
+            </div>
+            <div class="form-group">
+              <label for="phone-input">Enter phone number</label>
+              <input id="phone-input" type="text" placeholder="Eg. _1800 000000" required="" name="telephone">
+            </div>
+            <div class="form-group">
+              <label for="message-textarea">Message</label>
+              <input class="textarea" id="message-textarea" placeholder="Write me a message" name="complaint"></input>
+            </div>
+            <button type="submit" class="btn">Send message</button>
+          </form>
+        </div>
+      </div>
+          </section>
+
+
+    <!-- End -->
+
+    <section class="End">
+      <h4><i>&copy</i> 2022 By avard </h4>
+    </section>
+</body>
+<script src="apps.js"></script>
+</html>
