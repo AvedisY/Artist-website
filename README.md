@@ -2,4 +2,5 @@
 A portfolio website example for artists.
 
 It was made using JS, CSS, HTML. 
-Js not fully completed, it lacks info for images to use in the modal, so all look the same.
+
+It can be used for any image/photo gallery. It has 4 sections overall
